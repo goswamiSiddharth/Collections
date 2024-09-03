@@ -27,12 +27,20 @@ public class StudentSorter {
 
 
         System.out.println("\nSort by Name:");
-        sortStudents(students, new Comparator<Student>() {
-            @Override
-            public int compare(Student s1, Student s2) {
-                return s1.getName().compareTo(s2.getName());
-            }
-        });
+//        sortStudents(students, new Comparator<Student>() {
+//            @Override
+//            public int compare(Student s1, Student s2) {
+//                return s1.getName().compareTo(s2.getName());
+//            }
+//        });
+//        printArray(students);
+
+        sortStudents(students,
+                (Student s1, Student s2) ->{
+            return s1.getName().compareTo(s2.getName());
+        }
+
+        );
         printArray(students);
 
 
