@@ -9,9 +9,9 @@ public class StudentSorter {
 
     public static void main(String[] args) {
         Student[] students = {
-                new Student(1, "A", 85, 20),
+                new Student(1, "X", 85, 20),
                 new Student(2, "B", 90, 22),
-                new Student(3, "C", 75, 19),
+                new Student(3, "Z", 75, 19),
                 new Student(4, "D", 90, 21)
         };
 
